@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Bem-vindo ao Meu Portfólio</title>
+  <link rel="icon" href="img e videos/logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="bemvindo.css">
+</head>
+<body>
+
+  <canvas id="Matrix" class="fundo"></canvas>
+
+  <div class="box">
+    <h1>Bem-vindo ao Meu Portfólio</h1>
+    <p>Explore meus projetos, habilidades e entre em contato comigo!</p>
+    <a href="portifolio.html" class="btnentrar" id="btnentrar">Entrar</a>
+  </div>
+
+  <script src="particulas.js"></script>
+
+  <!-- Script da transição suave -->
+  <script>
+    const btn = document.getElementById("btnentrar");
+    btn.addEventListener("click", function (e) {
+      e.preventDefault();
+      document.body.classList.add("fade-out");
+      setTimeout(() => {
+        window.location.href = btn.href;
+      }, 500);
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu Portfólio Retrô</title>
+  <link rel="icon" href="img e videos/logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="portifolio.css">
+</head>
+<body>
+  <header>
+    <video autoplay muted loop>
+      <source src="img e videos/fundo.mp4" type="video/mp4">
+      Seu navegador não suporta vídeo em HTML5.
+    </video>
+    <img src="img e videos/logo.png" alt="Logo do portfólio" class="logo">
+  </header>
+
+  <section id="habilidades">
+  <h2 style="text-align: center; color: #fff;">
+    MINHAS <span style="color: #00ccff;">HABILIDADES.</span>
+  </h2>
+
+  <div class="cards-habilidades">
+
+    <div class="card-habilidades">
+      <img src="https://cdn-icons-png.flaticon.com/512/732/732212.png" alt="HTML e CSS">
+      <h3>HTML & CSS</h3>
+      <p>
+        Estruturação de sites com HTML5 e estilização avançada com CSS3, incluindo Flexbox, Grid Layout e responsividade.
+      </p>
+    </div>
+
+    <div class="card-habilidades destaque">
+      <img src="https://cdn-icons-png.flaticon.com/512/919/919830.png" alt="PHP">
+      <h3>PHP</h3>
+      <p>
+        Conhecimento básico em PHP para lidar com back-end, formulários e lógica de servidor de forma dinâmica.
+      </p>
+    </div>
+
+    <div class="card-habilidades">
+      <img src="https://img.icons8.com/color/96/flutter.png" alt="Flutter">
+      <h3>Flutter</h3>
+      <p>
+        Desenvolvimento de aplicações mobile com Flutter, focando em performance, UI nativa e lógica com Dart.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+</section>
+      <section id="sobre">
+  <div class="sobre-container">
+    <img src="img e videos/miguel.jpg" alt="Foto de perfil" class="foto-perfil">
+    <div class="texto-sobre">
+      <h2>Sobre Mim</h2>
+      <p>
+        Olá! Meu nome é Miguel Reis, tenho 17 anos e moro em Tambaú – SP, onde também nasci. Atualmente sou estudante na Escola SESI e estou cursando Desenvolvimento de Sistemas pelo SENAI.
+Esse curso oferece uma base sólida na criação de sites e sistemas, onde aprendemos linguagens como HTML, CSS, PHP e também trabalhamos com Flutter, uma tecnologia usada para desenvolver aplicativos móveis de forma eficiente e moderna.
+Além do meu interesse por tecnologia, sou uma pessoa bastante ativa. Gosto de treinar e frequentar a academia, e também curto jogar online nas horas livres. Praticar esportes faz parte da minha rotina, pois acredito no equilíbrio entre mente e corpo.
+Estou sempre buscando evoluir tanto pessoal quanto profissionalmente, aprendendo novas habilidades e me desafiando em diferentes áreas.
+      </p>
+    </div>
+  </div>
+</section>
+
+ <section class="portfolio" id="projetos">
+  <h2>Projetos</h2>
+  <div class="projetos-container">
+    
+    <div class="projeto-linha">
+      <video class="video-bg" muted playsinline preload="auto" >
+        <source src="img e videos/Aurora - Google Chrome 2025-06-09 07-21-44.mp4" type="video/mp4">
+      </video>
+      <div class="texto-projeto">
+        <h3>Projeto Aurora</h3>
+        <p>Um site feito com o objetivo de apoiar mulheres em situação de vulnerabilidade, promovendo a equidade de gênero e garantindo condições dignas de vida para aquelas que enfrentam.</p>
+      </div>
+    </div>
+
+    <div class="projeto-linha">
+      <video class="video-bg" muted playsinline preload="auto" >
+        <source src="img e videos/Abeia Cast - Opera 2025-05-26 15-08-52.mp4" type="video/mp4">
+      </video>
+      <div class="texto-projeto">
+        <h3>Projeto Abeia Cast</h3>
+        <p>Um site feito com inteçao de dilvulgar um podcast que fala sobre o uso de imagens no desenvolvimento de sites.</p>
+      </div>
+    </div>
+
+    <div class="projeto-linha">
+      <video class="video-bg" muted playsinline preload="auto" >
+        <source src="img e videos/Alvorada Literária - Opera 2025-05-26 14-32-48.mp4" type="video/mp4">
+      </video>
+      <div class="texto-projeto">
+        <h3>Projeto Alvorada Literária</h3>
+        <p>Um site desenvolvido com a inteçao de compartilhar infomações sobre o pré-modernismo e suas obras e seus autores.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+  <section id="contato">
+    <h2>Contato</h2>
+    <div class="icones-contato">
+      <a href="mailto:miguelreis150150@gmail.com">📧 Email</a>
+      <a href="https://github.com/Eo-el-nevida" target="_blank">🐱 GitHub</a>
+     
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Miguel Reis. Todos os direitos reservados.</p>
+  </footer>
+
+ <script>
+  window.addEventListener('DOMContentLoaded', () => {
+    requestAnimationFrame(() => {
+      document.body.classList.add('fade-in');
+    });
+  });
+</script>
+<script>
+  document.querySelectorAll('.video-bg').forEach(video => {
+    const container = video.closest('.projeto-linha');
+
+    container.addEventListener('mouseenter', () => {
+      video.currentTime = 0;
+      video.play();
+    });
+
+    container.addEventListener('mouseleave', () => {
+      video.pause();
+      video.currentTime = 0;
+    });
+  });
+</script>
+
+
+
+
+</body>
+</html>
+!
